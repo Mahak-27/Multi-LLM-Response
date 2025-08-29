@@ -10,7 +10,7 @@ export const handleOpenRouter=async(req,res)=>{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",
-                "Authorization":`Bearer ${process.env.OPENROUTER_API}`,
+                "Authorization":`Bearer ${process.env.OPENROUTER_API_KEY}`,
             },
             body:JSON.stringify(
                 {
