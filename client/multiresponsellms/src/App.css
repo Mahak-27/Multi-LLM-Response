@@ -1,0 +1,107 @@
+
+.prompt-box {
+  display: flex;
+  align-items: center;
+  background: rgba(15, 15, 25, 0.6); /* semi-transparent dark bg */
+  border-radius: 2rem; /* rounded pill shape */
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(0, 255, 255, 0.4); /* cyan glow border */
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.3),
+              0 0 24px rgba(0, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.prompt-box textarea {
+  flex: 1;
+  background: transparent; 
+  border: none;
+  outline: none;
+  color: #fff;
+  resize: none;
+  font-size: 1.1rem;
+}
+
+.prompt-box button {
+  margin-left: 0.75rem;
+  background: linear-gradient(90deg, #00f0ff, #00f2ff, #00ff85);
+  background-size: 300% 300%;
+  animation: holoGlow 6s ease infinite;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 2.8rem;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  transition: transform 0.2s ease;
+}
+
+.prompt-box button:hover {
+  transform: scale(1.1);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 255, 255, 0.4);;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+.response-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 240, 255, 0.4);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+  transition: 0.2s ease;
+  color: #fff;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-height: 340px; /* avoid huge cards */
+  overflow-y: auto;
+}
+
+/* Optional: Hover effect */
+.response-card:hover {
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+
+.response-card {
+  height: auto; /* Allow the card to grow based on content */
+  align-self: start; /* This is key to making the top edge of cards align */
+}
+
+/* Holographic border for buttons */
+.holo-btn {
+  background: linear-gradient(90deg, #00f0ff, #00fff2, #00ff85);
+  background-size: 300% 300%;
+  animation: holoGlow 6s ease infinite;
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.holo-btn:hover {
+  transform: scale(1.05);
+}
+
+@keyframes holoGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
