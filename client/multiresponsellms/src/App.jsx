@@ -49,13 +49,13 @@ function App() {
       ]
     },
 
-    qwenCoder:{
-      label: "Qwen3-Coder (Code Assistant)",
-      options:[
-        { value: "qwen/qwen3-coder:free" },
-        { value: "qwen/qwen3-14b:free" },
-      ]
-    },
+    // qwenCoder:{
+    //   label: "Qwen3-Coder (Code Assistant)",
+    //   options:[
+    //     { value: "qwen/qwen3-coder:free" },
+    //     { value: "qwen/qwen3-14b:free" },
+    //   ]
+    // },
 
     llama:{
       label: "LLaMA",
@@ -83,12 +83,12 @@ function App() {
       ]
     },
 
-    kimiCoder:{
-      label: "Kimi Dev 72B (Coding)",
-      options:[
-        { value:  "moonshotai/kimi-dev-72b:free" },
-      ]
-    },
+    // kimiCoder:{
+    //   label: "Kimi Dev 72B (Coding)",
+    //   options:[
+    //     { value:  "moonshotai/kimi-dev-72b:free" },
+    //   ]
+    // },
     
   };
 
